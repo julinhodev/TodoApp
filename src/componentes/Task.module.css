@@ -1,0 +1,51 @@
+.task {
+    width: 100%;
+    background: var(--gray-500);
+    border-radius: 8px;
+    border: 1px solid var(--gray-400);
+}
+
+.taskBorderChecked {
+    border: none;
+}
+
+.task + .task {
+    margin-top: 0.6rem;
+}
+
+.taskCheckedAndDesc {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.icon {
+    margin-left: 1rem;
+    cursor: pointer;
+}
+.icon:hover {
+    color: var(--danger);
+}
+
+.taskCheckedAndDesc textarea {
+    width: 100%;
+    background: var(--gray-500);
+    border: 0;
+    font-family: 'Inter', sans-serif;
+    color: var(--gray-100);
+    overflow: hidden;
+    resize: none;
+    font-size: 0.9rem;
+}
+
+.checkbox {
+    margin-right: 1rem;
+    cursor: pointer
+}
+
+.lineTaskCompleted {
+    text-decoration: line-through;
+    color: var(--gray-300) !important;
+}
